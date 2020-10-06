@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IgualesActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryLight">
+
+            <ImageButton
+                android:id="@+id/ibFromIguales"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_white_arrow_back_24"
+                android:background="@drawable/transparent"
+                android:contentDescription="@string/app_name" />
+
+            <EditText
+                android:id="@+id/etIguales"
+                android:layout_width="250dp"
+                android:layout_height="43dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_button_iguales"
+                android:fontFamily="@font/proxima"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="@string/zero"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:autofillHints="" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="1">
+
+            <Spinner
+                android:id="@+id/spinnerIguales"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tvIgualesRes" />
+
+            <TextView
+                android:id="@+id/tvIgualesRes"
+                android:layout_width="225dp"
+                android:gravity="center"
+                android:layout_height="43dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_button_iguales_res"
+                android:fontFamily="@font/proxima"
+                android:maxLines="1"
+                android:text="@string/zero"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_arrow_downward"
+        android:contentDescription="@string/app_name" />
+
+
+</FrameLayout>

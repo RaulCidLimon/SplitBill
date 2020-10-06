@@ -1,0 +1,27 @@
+<resources>
+    <string name="zero">0</string>
+
+    <string name="app_name">SplitBill</string>
+    <string name="app_name_desc">Selecciona que tipo de operación desea realizar</string>
+
+    <string name="btn_partes_iguales">Partes iguales</string>
+    <string name="btn_partes_iguales_desc">Divide las cosas a partes iguales</string>
+    <string name="btn_cada_uno_su_parte">Cada uno lo suyo</string>
+    <string name="btn_cada_uno_su_parte_desc">Divide las cosas según lo que haya comprado cada uno</string>
+    <string name="btn_Ajustes">Ajustes</string>
+    <string name="btn_Ajustes_desc">Configurar la app</string>
+
+    <string name="lista_objetos">Lista de Objetos</string>
+    <string name="btn_add">Añadir</string>
+    <string name="btn_delete">Eliminar todo</string>
+
+    <string name="nombre_objeto">Nombre objeto*</string>
+    <string name="dinero">Dinero*</string>
+    <string name="nombre_persona">Nombre persona*</string>
+    <string name="informacion_popup">Todo el texto se pasará a mayúsculas</string>
+    <string name="aceptar">aceptar</string>
+    <string name="cancelar">cancelar</string>
+    <string name="crear_objeto">crear objeto</string>
+
+
+</resources>
