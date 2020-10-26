@@ -30,7 +30,6 @@ public class IgualesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iguales);
 
-        spinnerIguales = findViewById(R.id.spinnerIguales);
         ibFromIguales = findViewById(R.id.ibFromIguales);
         ibFromIguales.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +38,16 @@ public class IgualesActivity extends AppCompatActivity {
             }
         });
 
+        spinnerAdapter();
+
+        etIguales = findViewById(R.id.etIguales);
+        tvIgualesRes = findViewById(R.id.tvIgualesRes);
+
+        cambiarTexto();
+    }
+
+    private void spinnerAdapter() {
+        spinnerIguales = findViewById(R.id.spinnerIguales);
         ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, sItems);
         spinnerIguales.setAdapter(adapter);
         spinnerIguales.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -53,13 +62,7 @@ public class IgualesActivity extends AppCompatActivity {
 
             }
         });
-
-        etIguales = findViewById(R.id.etIguales);
-        tvIgualesRes = findViewById(R.id.tvIgualesRes);
-
-        cambiarTexto();
     }
-
 
     private void cambiarTexto() {
         etIguales.addTextChangedListener(new TextWatcher() {
@@ -84,6 +87,7 @@ public class IgualesActivity extends AppCompatActivity {
                     s.clear();
                 } else if (s.toString().length() == 1 && s.toString().equalsIgnoreCase(".")) {
                     etIguales.setText("0.");
+                    etIguales.setSelection(2);
                 }
                 Log.d("Main", "e");
             }

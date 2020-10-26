@@ -14,14 +14,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //TODO CREAR UN GOTOINFORMACION
         //TODO CREAR UN GOTOAJUSTES
+        iniciarBotonesMain();
+    }
 
+    private void iniciarBotonesMain() {
         btnIguales = findViewById(R.id.btnIguales);
         btnIguales.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToIguales();
+                Intent intent = new Intent(MainActivity.this, IgualesActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -29,20 +32,10 @@ public class MainActivity extends AppCompatActivity {
         btnSuyo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSuyo();
+                Intent intent = new Intent(MainActivity.this, SuyoActivity.class);
+                startActivity(intent);
             }
         });
-
-    }
-
-    private void goToSuyo() {
-        Intent intent = new Intent(this, SuyoActivity.class);
-        startActivity(intent);
-    }
-
-    private void goToIguales() {
-        Intent intent = new Intent(this, IgualesActivity.class);
-        startActivity(intent);
 
     }
 }

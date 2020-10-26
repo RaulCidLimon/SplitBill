@@ -39,9 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tvRvName"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            android:padding="8dp"
             />
 
     </RelativeLayout>
@@ -51,13 +49,21 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvResultadoItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnDelete"
+            android:padding="8dp"
+            />
+
 
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="206dp"
+            android:layout_marginEnd="205dp"
             android:background="@drawable/suyo_add"
             android:text="@string/btn_add"
             android:textStyle="bold" />
@@ -67,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="206dp"
+            android:layout_marginStart="205dp"
             android:background="@drawable/suyo_delete"
             android:text="@string/btn_delete"
             android:textStyle="bold" />

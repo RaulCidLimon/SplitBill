@@ -15,13 +15,17 @@
     <string name="btn_add">Añadir</string>
     <string name="btn_delete">Eliminar todo</string>
 
+    <string name="crear_objeto">crear objeto</string>
     <string name="nombre_objeto">Nombre objeto*</string>
     <string name="dinero">Dinero*</string>
     <string name="nombre_persona">Nombre persona*</string>
     <string name="informacion_popup">Todo el texto se pasará a mayúsculas</string>
+
     <string name="aceptar">aceptar</string>
     <string name="cancelar">cancelar</string>
-    <string name="crear_objeto">crear objeto</string>
+
+    <string name="faltan_valores">Faltan valoreso</string>
+    <string name="eliminar_todo">¿Desea eliminar todo?</string>
 
 
 </resources>

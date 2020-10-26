@@ -7,6 +7,8 @@
     <color name="colorAccent">#4E49CC</color>
     <color name="colorAccentDark">#242180</color>
 
+    <color name="grisOscuro">#3E3E3E</color>
+
 
     <color name="colorAdd">#2BF58A</color>
     <color name="colorDelete">#F52B32</color>
